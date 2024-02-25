@@ -1,6 +1,4 @@
-import Pokecard from "../Pokecard"
-function Pokedex(){
-    const data = [
+    const Pokemon = [
         {
           id: 1,
           name: "Charmander",
@@ -37,17 +35,5 @@ function Pokedex(){
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
         },
       ]
-    return(
-        <ul>
-        {
-          data.map((pokemon, i) => (
-            <Pokecard
-                pokemon={pokemon}
-                key={i}
-            />
-          ))
-        }
-      </ul>
-    )
-}
-export default Pokedex
+
+export default Pokemon
